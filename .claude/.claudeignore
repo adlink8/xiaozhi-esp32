@@ -1,0 +1,150 @@
+# XiaoZhi ESP32 - Claude Ignore File
+# 指定 Claude 在分析代码时应该忽略的文件和目录
+
+# Build output
+build/
+dist/
+*.bin
+*.elf
+*.map
+
+# Dependencies
+dependencies/
+managed_components/
+components/*/managed_components/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled object files
+*.o
+*.obj
+*.a
+*.lib
+
+# ESP-IDF specific
+sdkconfig
+sdkconfig.old
+sdkconfig.defaults.old
+
+# Flash download tool config
+flash_project_args
+flasher_args.json
+
+# Logs
+*.log
+monitor.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Version control
+.git/
+.gitattributes
+
+# Generated files
+main/audio/models/*.dat
+main/assets/*.bin
+
+# Large binary assets
+*.wav
+*.mp3
+*.jpg
+*.png
+*.ttf
+*.otf
+
+# Partition tables (binary)
+*.bin
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Test outputs
+test_output/
+test_results/
+
+# Release packages
+releases/
+*.zip
+*.tar.gz
+
+# Backup files
+*.bak
+*.backup
+
+# OS generated
+Thumbs.db
+Desktop.ini
+
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Node modules (if any)
+node_modules/
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# IDF specific
+managed_components/
+dependencies.lock
+
+# Bootloader binary
+bootloader.bin
+
+# Partition binary
+partition_table.bin
+
+# Certificates and keys (security)
+*.pem
+*.key
+*.crt
+*.cer
+
+# Large model files
+*.model
+*.caffemodel
+*.pb
+
+# Database files
+*.db
+*.sqlite
+
+# Compressed archives
+*.7z
+*.rar
+*.iso
+
+# Configuration that should not be shared
+credentials.h
+secrets.h
+config_local.h
+
+# Build artifacts from different boards
+**/build_*/
+
+# OTA firmware packages
+ota_*.bin
+
+# Flash download configs
+download.config
