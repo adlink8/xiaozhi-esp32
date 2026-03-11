@@ -1,0 +1,1038 @@
+{
+  "total_files": 7,
+  "categories": {
+    "overview": [
+      "blufi.md",
+      "code_style.md",
+      "custom-board.md",
+      "mcp-protocol.md",
+      "mcp-usage.md",
+      "mqtt-udp.md",
+      "websocket.md"
+    ]
+  },
+  "files": [
+    {
+      "path": "blufi.md",
+      "filename": "blufi.md",
+      "category": "overview",
+      "size_bytes": 2492,
+      "title": "BluFi \u914d\u7f51\uff08\u96c6\u6210 esp-wifi-connect\uff09",
+      "structure": {
+        "title": "BluFi \u914d\u7f51\uff08\u96c6\u6210 esp-wifi-connect\uff09",
+        "headers": [
+          {
+            "level": 1,
+            "text": "BluFi \u914d\u7f51\uff08\u96c6\u6210 esp-wifi-connect\uff09",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "\u524d\u7f6e\u6761\u4ef6",
+            "line": 7
+          },
+          {
+            "level": 2,
+            "text": "\u5de5\u4f5c\u6d41\u7a0b",
+            "line": 15
+          },
+          {
+            "level": 2,
+            "text": "\u4f7f\u7528\u6b65\u9aa4",
+            "line": 22
+          },
+          {
+            "level": 2,
+            "text": "\u6ce8\u610f\u4e8b\u9879",
+            "line": 31
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "text",
+            "code": "- \u6210\u529f\uff1aBluFi \u62a5\u544a\u8fde\u63a5\u6210\u529f\uff0c\u8bbe\u5907\u81ea\u52a8\u8fde\u63a5 Wi\u2011Fi\u3002\n- \u5931\u8d25\uff1aBluFi \u8fd4\u56de\u5931\u8d25\u72b6\u6001\uff0c\u53ef\u91cd\u65b0\u53d1\u9001\u6216\u68c0\u67e5\u8def\u7531\u5668\u3002"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 1,
+        "word_count": 13,
+        "line_count": 38
+      },
+      "summary": "**BluFi \u914d\u7f51\uff08\u96c6\u6210 esp-wifi-connect\uff09**\nSections: \u524d\u7f6e\u6761\u4ef6, \u5de5\u4f5c\u6d41\u7a0b, \u4f7f\u7528\u6b65\u9aa4, \u6ce8\u610f\u4e8b\u9879\n\u672c\u6587\u6863\u8bf4\u660e\u5982\u4f55\u5728\u5c0f\u667a\u56fa\u4ef6\u4e2d\u542f\u7528\u548c\u4f7f\u7528 BluFi\uff08BLE Wi\u2011Fi \u914d\u7f51\uff09\uff0c\u5e76\u7ed3\u5408\u9879\u76ee\u5185\u7f6e\u7684 `esp-wifi-connect` \u7ec4\u4ef6\u5b8c\u6210 Wi\u2011Fi \u8fde\u63a5\u4e0e\u5b58\u50a8\u3002\u5b98\u65b9 BluFi \u534f\u8bae\u8bf4\u660e\u8bf7\u53c2\u8003 [Espressif \u6587\u6863](https://docs.espressif.com/projects/esp-idf/zh_CN/stable/esp32/api-guides/ble/blufi....\n(13 words, 1 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 0,
+        "code_blocks": 1,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 8.0
+        }
+      }
+    },
+    {
+      "path": "code_style.md",
+      "filename": "code_style.md",
+      "category": "overview",
+      "size_bytes": 2411,
+      "title": "\u4ee3\u7801\u98ce\u683c\u6307\u5357",
+      "structure": {
+        "title": "\u4ee3\u7801\u98ce\u683c\u6307\u5357",
+        "headers": [
+          {
+            "level": 1,
+            "text": "\u4ee3\u7801\u98ce\u683c\u6307\u5357",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "\u4ee3\u7801\u683c\u5f0f\u5316\u5de5\u5177",
+            "line": 3
+          },
+          {
+            "level": 3,
+            "text": "\u5b89\u88c5 clang-format",
+            "line": 7
+          },
+          {
+            "level": 3,
+            "text": "\u4f7f\u7528\u65b9\u6cd5",
+            "line": 29
+          },
+          {
+            "level": 3,
+            "text": "IDE \u96c6\u6210",
+            "line": 48
+          },
+          {
+            "level": 3,
+            "text": "\u4e3b\u8981\u683c\u5f0f\u89c4\u5219",
+            "line": 60
+          },
+          {
+            "level": 3,
+            "text": "\u6ce8\u610f\u4e8b\u9879",
+            "line": 69
+          },
+          {
+            "level": 3,
+            "text": "\u5e38\u89c1\u95ee\u9898",
+            "line": 80
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "powershell",
+            "code": "  winget install LLVM\n  # \u6216\u8005\u4f7f\u7528 Chocolatey\n  choco install llvm"
+          },
+          {
+            "language": "bash",
+            "code": "  sudo apt install clang-format  # Ubuntu/Debian\n  sudo dnf install clang-tools-extra  # Fedora"
+          },
+          {
+            "language": "bash",
+            "code": "  brew install clang-format"
+          },
+          {
+            "language": "bash",
+            "code": "   clang-format -i path/to/your/file.cpp"
+          },
+          {
+            "language": "bash",
+            "code": "   # \u5728\u9879\u76ee\u6839\u76ee\u5f55\u4e0b\u6267\u884c\n   find main -iname *.h -o -iname *.cc | xargs clang-format -i"
+          },
+          {
+            "language": "bash",
+            "code": "   # \u68c0\u67e5\u6587\u4ef6\u683c\u5f0f\u662f\u5426\u7b26\u5408\u89c4\u8303\uff08\u4e0d\u4fee\u6539\u6587\u4ef6\uff09\n   clang-format --dry-run -Werror path/to/your/file.cpp"
+          },
+          {
+            "language": "cpp",
+            "code": "   // clang-format off\n   // \u4f60\u7684\u4ee3\u7801\n   // clang-format on"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 0,
+        "word_count": 34,
+        "line_count": 91
+      },
+      "summary": "**\u4ee3\u7801\u98ce\u683c\u6307\u5357**\nSections: \u4ee3\u7801\u683c\u5f0f\u5316\u5de5\u5177, \u5b89\u88c5 clang-format, \u4f7f\u7528\u65b9\u6cd5, IDE \u96c6\u6210, \u4e3b\u8981\u683c\u5f0f\u89c4\u5219\n\u672c\u9879\u76ee\u4f7f\u7528 clang-format \u5de5\u5177\u6765\u7edf\u4e00\u4ee3\u7801\u98ce\u683c\u3002\u6211\u4eec\u5df2\u7ecf\u5728\u9879\u76ee\u6839\u76ee\u5f55\u4e0b\u63d0\u4f9b\u4e86 `.clang-format` \u914d\u7f6e\u6587\u4ef6\uff0c\u8be5\u914d\u7f6e\u57fa\u4e8e Google C++ \u98ce\u683c\u6307\u5357\uff0c\u5e76\u505a\u4e86\u4e00\u4e9b\u81ea\u5b9a\u4e49\u8c03\u6574\u3002\n(34 words, 7 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 0,
+        "code_blocks": 7,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 7.428571428571429
+        }
+      }
+    },
+    {
+      "path": "custom-board.md",
+      "filename": "custom-board.md",
+      "category": "overview",
+      "size_bytes": 14267,
+      "title": "\u81ea\u5b9a\u4e49\u5f00\u53d1\u677f\u6307\u5357",
+      "structure": {
+        "title": "\u81ea\u5b9a\u4e49\u5f00\u53d1\u677f\u6307\u5357",
+        "headers": [
+          {
+            "level": 1,
+            "text": "\u81ea\u5b9a\u4e49\u5f00\u53d1\u677f\u6307\u5357",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "\u91cd\u8981\u63d0\u793a",
+            "line": 5
+          },
+          {
+            "level": 2,
+            "text": "\u76ee\u5f55\u7ed3\u6784",
+            "line": 11
+          },
+          {
+            "level": 2,
+            "text": "\u5b9a\u5236\u5f00\u53d1\u677f\u6b65\u9aa4",
+            "line": 20
+          },
+          {
+            "level": 3,
+            "text": "1. \u521b\u5efa\u65b0\u7684\u5f00\u53d1\u677f\u76ee\u5f55",
+            "line": 22
+          },
+          {
+            "level": 3,
+            "text": "2. \u521b\u5efa\u914d\u7f6e\u6587\u4ef6",
+            "line": 30
+          },
+          {
+            "level": 4,
+            "text": "config.h",
+            "line": 32
+          },
+          {
+            "level": 4,
+            "text": "config.json",
+            "line": 88
+          },
+          {
+            "level": 3,
+            "text": "3. \u7f16\u5199\u677f\u7ea7\u521d\u59cb\u5316\u4ee3\u7801",
+            "line": 135
+          },
+          {
+            "level": 3,
+            "text": "4. \u6dfb\u52a0\u6784\u5efa\u7cfb\u7edf\u914d\u7f6e",
+            "line": 291
+          },
+          {
+            "level": 4,
+            "text": "\u5728 Kconfig.projbuild \u4e2d\u6dfb\u52a0\u5f00\u53d1\u677f\u9009\u9879",
+            "line": 293
+          },
+          {
+            "level": 4,
+            "text": "\u5728 CMakeLists.txt \u4e2d\u6dfb\u52a0\u5f00\u53d1\u677f\u914d\u7f6e",
+            "line": 317
+          },
+          {
+            "level": 3,
+            "text": "5. \u914d\u7f6e\u548c\u7f16\u8bd1",
+            "line": 343
+          },
+          {
+            "level": 4,
+            "text": "\u65b9\u6cd5\u4e00\uff1a\u4f7f\u7528 idf.py \u624b\u52a8\u914d\u7f6e",
+            "line": 345
+          },
+          {
+            "level": 4,
+            "text": "\u65b9\u6cd5\u4e8c\uff1a\u4f7f\u7528 release.py \u811a\u672c\uff08\u63a8\u8350\uff09",
+            "line": 377
+          },
+          {
+            "level": 3,
+            "text": "6. \u521b\u5efaREADME.md",
+            "line": 390
+          },
+          {
+            "level": 2,
+            "text": "\u5e38\u89c1\u5f00\u53d1\u677f\u7ec4\u4ef6",
+            "line": 395
+          },
+          {
+            "level": 3,
+            "text": "1. \u663e\u793a\u5c4f",
+            "line": 397
+          },
+          {
+            "level": 3,
+            "text": "2. \u97f3\u9891\u7f16\u89e3\u7801\u5668",
+            "line": 405
+          },
+          {
+            "level": 3,
+            "text": "3. \u7535\u6e90\u7ba1\u7406",
+            "line": 413
+          },
+          {
+            "level": 3,
+            "text": "4. MCP\u8bbe\u5907\u63a7\u5236",
+            "line": 419
+          },
+          {
+            "level": 2,
+            "text": "\u5f00\u53d1\u677f\u7c7b\u7ee7\u627f\u5173\u7cfb",
+            "line": 428
+          },
+          {
+            "level": 2,
+            "text": "\u5f00\u53d1\u6280\u5de7",
+            "line": 435
+          },
+          {
+            "level": 2,
+            "text": "\u53ef\u80fd\u9047\u5230\u7684\u95ee\u9898",
+            "line": 442
+          },
+          {
+            "level": 2,
+            "text": "\u53c2\u8003\u8d44\u6599",
+            "line": 449
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "bash",
+            "code": "mkdir main/boards/my-custom-board"
+          },
+          {
+            "language": "c",
+            "code": "#ifndef _BOARD_CONFIG_H_\n#define _BOARD_CONFIG_H_\n\n#include <driver/gpio.h>\n\n// \u97f3\u9891\u914d\u7f6e\n#define AUDIO_INPUT_SAMPLE_RATE  24000\n#define AUDIO_OUTPUT_SAMPLE_RATE 24000\n\n#define AUDIO_I2S_GPIO_MCLK GPIO_NUM_10\n#define AUDIO_I2S_GPIO_WS   GPIO_NUM_12\n#define AUDIO_I2S_GPIO_BCLK GPIO_NUM_8\n#define AUDIO_I2S_GPIO_DIN  GPIO_NUM_7\n#define AUDIO_I2S_GPIO_DOUT GPIO_NUM_11\n\n#define AUDIO_CODEC_PA_PIN       GPIO_NUM_13\n#define AUDIO_CODEC_I2C_SDA_PIN  GPIO_NUM_0\n#define AUDIO_CODEC_I2C_SCL_PIN  GPIO_NUM_1\n#define AUDIO_CODEC_ES8311_ADDR  ES8311_CODEC_DEFAULT_ADDR\n\n// \u6309\u94ae\u914d\u7f6e\n#define BOOT_BUTTON_GPIO        GPIO_NUM_9\n\n// \u663e\u793a\u5c4f\u914d\u7f6e\n#define DISPLAY_SPI_SCK_PIN     GPIO_NUM_3\n#define DISPLAY_SPI_MOSI_PIN    GPIO_NUM_5\n#define DISPLAY_DC_PIN          GPIO_NUM_6\n#define DISPLAY_SPI_CS_PIN      GPIO_NUM_4\n\n#define DISPLAY_WIDTH   320\n#define DISPLAY_HEIGHT  240\n#define DISPLAY_MIRROR_X true\n#define DISPLAY_MIRROR_Y false\n#define DISPLAY_SWAP_XY true\n\n#define DISPLAY_OFFSET_X  0\n#define DISPLAY_OFFSET_Y  0\n\n#define DISPLAY_BACKLIGHT_PIN GPIO_NUM_2\n#define DISPLAY_BACKLIGHT_OUTPUT_INVERT true\n\n#endif // _BOARD_CONFIG_H_"
+          },
+          {
+            "language": "json",
+            "code": "{\n    \"target\": \"esp32s3\",  // \u76ee\u6807\u82af\u7247\u578b\u53f7: esp32, esp32s3, esp32c3, esp32c6, esp32p4\u7b49\n    \"builds\": [\n        {\n            \"name\": \"my-custom-board\",  // \u5f00\u53d1\u677f\u540d\u79f0\uff0c\u7528\u4e8e\u751f\u6210\u56fa\u4ef6\u5305\n            \"sdkconfig_append\": [\n                // \u7279\u522b Flash \u5927\u5c0f\u914d\u7f6e\n                \"CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y\",\n                // \u7279\u522b\u5206\u533a\u8868\u914d\u7f6e\n                \"CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\\\"partitions/v2/8m.csv\\\"\"\n            ]\n        }\n    ]\n}"
+          },
+          {
+            "language": "cpp",
+            "code": "#include \"wifi_board.h\"\n#include \"codecs/es8311_audio_codec.h\"\n#include \"display/lcd_display.h\"\n#include \"application.h\"\n#include \"button.h\"\n#include \"config.h\"\n#include \"mcp_server.h\"\n\n#include <esp_log.h>\n#include <driver/i2c_master.h>\n#include <driver/spi_common.h>\n\n#define TAG \"MyCustomBoard\"\n\nclass MyCustomBoard : public WifiBoard {\nprivate:\n    i2c_master_bus_handle_t codec_i2c_bus_;\n    Button boot_button_;\n    LcdDisplay* display_;\n\n    // I2C\u521d\u59cb\u5316\n    void InitializeI2c() {\n        i2c_master_bus_config_t i2c_bus_cfg = {\n            .i2c_port = I2C_NUM_0,\n            .sda_io_num = AUDIO_CODEC_I2C_SDA_PIN,\n            .scl_io_num = AUDIO_CODEC_I2C_SCL_PIN,\n            .clk_source = I2C_CLK_SRC_DEFAULT,\n            .glitch_ignore_cnt = 7,\n            .intr_priority = 0,\n            .trans_queue_depth = 0,\n            .flags = {\n                .enable_internal_pullup = 1,\n            },\n        };\n        ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_bus_cfg, &codec_i2c_bus_));\n    }\n\n    // SPI\u521d\u59cb\u5316\uff08\u7528\u4e8e\u663e\u793a\u5c4f\uff09\n    void InitializeSpi() {\n        spi_bus_config_t buscfg = {};\n        buscfg.mosi_io_num = DISPLAY_SPI_MOSI_PIN;\n        buscfg.miso_io_num = GPIO_NUM_NC;\n        buscfg.sclk_io_num = DISPLAY_SPI_SCK_PIN;\n        buscfg.quadwp_io_num = GPIO_NUM_NC;\n        buscfg.quadhd_io_num = GPIO_NUM_NC;\n        buscfg.max_transfer_sz = DISPLAY_WIDTH * DISPLAY_HEIGHT * sizeof(uint16_t);\n        ESP_ERROR_CHECK(spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO));\n    }\n\n    // \u6309\u94ae\u521d\u59cb\u5316\n    void InitializeButtons() {\n        boot_button_.OnClick([this]() {\n            auto& app = Application::GetInstance();\n            if (app.GetDeviceState() == kDeviceStateStarting) {\n                EnterWifiConfigMode();\n                return;\n            }\n            app.ToggleChatState();\n        });\n    }\n\n    // \u663e\u793a\u5c4f\u521d\u59cb\u5316\uff08\u4ee5ST7789\u4e3a\u4f8b\uff09\n    void InitializeDisplay() {\n        esp_lcd_panel_io_handle_t panel_io = nullptr;\n        esp_lcd_panel_handle_t panel = nullptr;\n        \n        esp_lcd_panel_io_spi_config_t io_config = {};\n        io_config.cs_gpio_num = DISPLAY_SPI_CS_PIN;\n        io_config.dc_gpio_num = DISPLAY_DC_PIN;\n        io_config.spi_mode = 2;\n        io_config.pclk_hz = 80 * 1000 * 1000;\n        io_config.trans_queue_depth = 10;\n        io_config.lcd_cmd_bits = 8;\n        io_config.lcd_param_bits = 8;\n        ESP_ERROR_CHECK(esp_lcd_new_panel_io_spi(SPI2_HOST, &io_config, &panel_io));\n\n        esp_lcd_panel_dev_config_t panel_config = {};\n        panel_config.reset_gpio_num = GPIO_NUM_NC;\n        panel_config.rgb_ele_order = LCD_RGB_ELEMENT_ORDER_RGB;\n        panel_config.bits_per_pixel = 16;\n        ESP_ERROR_CHECK(esp_lcd_new_panel_st7789(panel_io, &panel_config, &panel));\n        \n        esp_lcd_panel_reset(panel);\n        esp_lcd_panel_init(panel);\n        esp_lcd_panel_invert_color(panel, true);\n        esp_lcd_panel_swap_xy(panel, DISPLAY_SWAP_XY);\n        esp_lcd_panel_mirror(panel, DISPLAY_MIRROR_X, DISPLAY_MIRROR_Y);\n        \n        // \u521b\u5efa\u663e\u793a\u5c4f\u5bf9\u8c61\n        display_ = new SpiLcdDisplay(panel_io, panel,\n                                    DISPLAY_WIDTH, DISPLAY_HEIGHT, \n                                    DISPLAY_OFFSET_X, DISPLAY_OFFSET_Y, \n                                    DISPLAY_MIRROR_X, DISPLAY_MIRROR_Y, DISPLAY_SWAP_XY);\n    }\n\n    // MCP Tools \u521d\u59cb\u5316\n    void InitializeTools() {\n        // \u53c2\u8003 MCP \u6587\u6863\n    }\n\npublic:\n    // \u6784\u9020\u51fd\u6570\n    MyCustomBoard() : boot_button_(BOOT_BUTTON_GPIO) {\n        InitializeI2c();\n        InitializeSpi();\n        InitializeDisplay();\n        InitializeButtons();\n        InitializeTools();\n        GetBacklight()->SetBrightness(100);\n    }\n\n    // \u83b7\u53d6\u97f3\u9891\u7f16\u89e3\u7801\u5668\n    virtual AudioCodec* GetAudioCodec() override {\n        static Es8311AudioCodec audio_codec(\n            codec_i2c_bus_, \n            I2C_NUM_0, \n            AUDIO_INPUT_SAMPLE_RATE, \n            AUDIO_OUTPUT_SAMPLE_RATE,\n            AUDIO_I2S_GPIO_MCLK, \n            AUDIO_I2S_GPIO_BCLK, \n            AUDIO_I2S_GPIO_WS, \n            AUDIO_I2S_GPIO_DOUT, \n            AUDIO_I2S_GPIO_DIN,\n            AUDIO_CODEC_PA_PIN, \n            AUDIO_CODEC_ES8311_ADDR);\n        return &audio_codec;\n    }\n\n    // \u83b7\u53d6\u663e\u793a\u5c4f\n    virtual Display* GetDisplay() override {\n        return display_;\n    }\n    \n    // \u83b7\u53d6\u80cc\u5149\u63a7\u5236\n    virtual Backlight* GetBacklight() override {\n        static PwmBacklight backlight(DISPLAY_BACKLIGHT_PIN, DISPLAY_BACKLIGHT_OUTPUT_INVERT);\n        return &backlight;\n    }\n};\n\n// \u6ce8\u518c\u5f00\u53d1\u677f\nDECLARE_BOARD(MyCustomBoard);"
+          },
+          {
+            "language": "kconfig",
+            "code": "choice BOARD_TYPE\n    prompt \"Board Type\"\n    default BOARD_TYPE_BREAD_COMPACT_WIFI\n    help\n        Board type. \u5f00\u53d1\u677f\u7c7b\u578b\n    \n    # ... \u5176\u4ed6\u5f00\u53d1\u677f\u9009\u9879 ...\n    \n    config BOARD_TYPE_MY_CUSTOM_BOARD\n        bool \"My Custom Board (\u6211\u7684\u81ea\u5b9a\u4e49\u5f00\u53d1\u677f)\"\n        depends on IDF_TARGET_ESP32S3  # \u6839\u636e\u4f60\u7684\u76ee\u6807\u82af\u7247\u4fee\u6539\nendchoice"
+          },
+          {
+            "language": "cmake",
+            "code": "# \u5728 elseif \u94fe\u4e2d\u6dfb\u52a0\u4f60\u7684\u5f00\u53d1\u677f\u914d\u7f6e\nelseif(CONFIG_BOARD_TYPE_MY_CUSTOM_BOARD)\n    set(BOARD_TYPE \"my-custom-board\")  # \u4e0e\u76ee\u5f55\u540d\u4e00\u81f4\n    set(BUILTIN_TEXT_FONT font_puhui_basic_20_4)  # \u6839\u636e\u5c4f\u5e55\u5927\u5c0f\u9009\u62e9\u5408\u9002\u7684\u5b57\u4f53\n    set(BUILTIN_ICON_FONT font_awesome_20_4)\n    set(DEFAULT_EMOJI_COLLECTION twemoji_64)  # \u53ef\u9009\uff0c\u5982\u679c\u9700\u8981\u8868\u60c5\u663e\u793a\nendif()"
+          },
+          {
+            "language": "bash",
+            "code": "   # \u5bf9\u4e8e ESP32-S3\n   idf.py set-target esp32s3\n   \n   # \u5bf9\u4e8e ESP32-C3\n   idf.py set-target esp32c3\n   \n   # \u5bf9\u4e8e ESP32\n   idf.py set-target esp32"
+          },
+          {
+            "language": "bash",
+            "code": "   idf.py fullclean"
+          },
+          {
+            "language": "bash",
+            "code": "   idf.py menuconfig"
+          },
+          {
+            "language": "bash",
+            "code": "   idf.py build\n   idf.py flash monitor"
+          },
+          {
+            "language": "bash",
+            "code": "python scripts/release.py my-custom-board"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 0,
+        "word_count": 85,
+        "line_count": 453
+      },
+      "summary": "**\u81ea\u5b9a\u4e49\u5f00\u53d1\u677f\u6307\u5357**\nSections: \u91cd\u8981\u63d0\u793a, \u76ee\u5f55\u7ed3\u6784, \u5b9a\u5236\u5f00\u53d1\u677f\u6b65\u9aa4, 1. \u521b\u5efa\u65b0\u7684\u5f00\u53d1\u677f\u76ee\u5f55, 2. \u521b\u5efa\u914d\u7f6e\u6587\u4ef6\n\u672c\u6307\u5357\u4ecb\u7ecd\u5982\u4f55\u4e3a\u5c0f\u667aAI\u8bed\u97f3\u804a\u5929\u673a\u5668\u4eba\u9879\u76ee\u5b9a\u5236\u4e00\u4e2a\u65b0\u7684\u5f00\u53d1\u677f\u521d\u59cb\u5316\u7a0b\u5e8f\u3002\u5c0f\u667aAI\u652f\u630170\u591a\u79cdESP32\u7cfb\u5217\u5f00\u53d1\u677f\uff0c\u6bcf\u4e2a\u5f00\u53d1\u677f\u7684\u521d\u59cb\u5316\u4ee3\u7801\u90fd\u653e\u5728\u5bf9\u5e94\u7684\u76ee\u5f55\u4e0b\u3002\n(85 words, 11 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 0,
+        "code_blocks": 11,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 7.109090909090909
+        }
+      }
+    },
+    {
+      "path": "mcp-protocol.md",
+      "filename": "mcp-protocol.md",
+      "category": "overview",
+      "size_bytes": 9705,
+      "title": "MCP (Model Context Protocol) \u4ea4\u4e92\u6d41\u7a0b",
+      "structure": {
+        "title": "MCP (Model Context Protocol) \u4ea4\u4e92\u6d41\u7a0b",
+        "headers": [
+          {
+            "level": 1,
+            "text": "MCP (Model Context Protocol) \u4ea4\u4e92\u6d41\u7a0b",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "\u534f\u8bae\u683c\u5f0f",
+            "line": 7
+          },
+          {
+            "level": 2,
+            "text": "\u4ea4\u4e92\u6d41\u7a0b\u53ca\u53d1\u9001\u65f6\u673a",
+            "line": 37
+          },
+          {
+            "level": 2,
+            "text": "\u4ea4\u4e92\u56fe",
+            "line": 215
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "json",
+            "code": "{\n  \"session_id\": \"...\", // \u4f1a\u8bdd ID\n  \"type\": \"mcp\",       // \u6d88\u606f\u7c7b\u578b\uff0c\u56fa\u5b9a\u4e3a \"mcp\"\n  \"payload\": {         // JSON-RPC 2.0 \u8d1f\u8f7d\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"...\",   // \u65b9\u6cd5\u540d (\u5982 \"initialize\", \"tools/list\", \"tools/call\")\n    \"params\": { ... }, // \u65b9\u6cd5\u53c2\u6570 (\u5bf9\u4e8e request)\n    \"id\": ...,         // \u8bf7\u6c42 ID (\u5bf9\u4e8e request \u548c response)\n    \"result\": { ... }, // \u65b9\u6cd5\u6267\u884c\u7ed3\u679c (\u5bf9\u4e8e success response)\n    \"error\": { ... }   // \u9519\u8bef\u4fe1\u606f (\u5bf9\u4e8e error response)\n  }\n}"
+          },
+          {
+            "language": "text",
+            "code": "- **\u65f6\u673a\uff1a** \u8bbe\u5907\u542f\u52a8\u5e76\u6210\u529f\u8fde\u63a5\u5230\u540e\u53f0 API \u540e\u3002\n- **\u53d1\u9001\u65b9\uff1a** \u8bbe\u5907\u3002\n- **\u6d88\u606f\uff1a** \u8bbe\u5907\u53d1\u9001\u57fa\u7840\u534f\u8bae\u7684 \"hello\" \u6d88\u606f\u7ed9\u540e\u53f0 API\uff0c\u6d88\u606f\u4e2d\u5305\u542b\u8bbe\u5907\u652f\u6301\u7684\u80fd\u529b\u5217\u8868\uff0c\u4f8b\u5982\u901a\u8fc7\u652f\u6301 MCP \u534f\u8bae (`\"mcp\": true`)\u3002\n- **\u793a\u4f8b (\u975e MCP \u8d1f\u8f7d\uff0c\u800c\u662f\u57fa\u7840\u534f\u8bae\u6d88\u606f):**\n  ```json\n  {\n    \"type\": \"hello\",\n    \"version\": ...,\n    \"features\": {\n      \"mcp\": true,\n      ...\n    },\n    \"transport\": \"websocket\", // \u6216 \"mqtt\"\n    \"audio_params\": { ... },\n    \"session_id\": \"...\" // \u8bbe\u5907\u6536\u5230\u670d\u52a1\u5668hello\u540e\u53ef\u80fd\u8bbe\u7f6e\n  }\n  ```"
+          },
+          {
+            "language": "text",
+            "code": "- **\u65f6\u673a\uff1a** \u540e\u53f0 API \u6536\u5230\u8bbe\u5907 \"hello\" \u6d88\u606f\uff0c\u786e\u8ba4\u8bbe\u5907\u652f\u6301 MCP \u540e\uff0c\u901a\u5e38\u4f5c\u4e3a MCP \u4f1a\u8bdd\u7684\u7b2c\u4e00\u4e2a\u8bf7\u6c42\u53d1\u9001\u3002\n- **\u53d1\u9001\u65b9\uff1a** \u540e\u53f0 API (\u5ba2\u6237\u7aef)\u3002\n- **\u65b9\u6cd5\uff1a** `initialize`\n- **\u6d88\u606f (MCP payload):**\n\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"initialize\",\n    \"params\": {\n      \"capabilities\": {\n        // \u5ba2\u6237\u7aef\u80fd\u529b\uff0c\u53ef\u9009\n\n        // \u6444\u50cf\u5934\u89c6\u89c9\u76f8\u5173\n        \"vision\": {\n          \"url\": \"...\", //\u6444\u50cf\u5934: \u56fe\u7247\u5904\u7406\u5730\u5740(\u5fc5\u987b\u662fhttp\u5730\u5740, \u4e0d\u662fwebsocket\u5730\u5740)\n          \"token\": \"...\" // url token\n        }\n\n        // ... \u5176\u4ed6\u5ba2\u6237\u7aef\u80fd\u529b\n      }\n    },\n    \"id\": 1 // \u8bf7\u6c42 ID\n  }\n  ```\n\n- **\u8bbe\u5907\u54cd\u5e94\u65f6\u673a\uff1a** \u8bbe\u5907\u6536\u5230 `initialize` \u8bf7\u6c42\u5e76\u5904\u7406\u540e\u3002\n- **\u8bbe\u5907\u54cd\u5e94\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1, // \u5339\u914d\u8bf7\u6c42 ID\n    \"result\": {\n      \"protocolVersion\": \"2024-11-05\",\n      \"capabilities\": {\n        \"tools\": {} // \u8fd9\u91cc\u7684 tools \u4f3c\u4e4e\u4e0d\u5217\u51fa\u8be6\u7ec6\u4fe1\u606f\uff0c\u9700\u8981 tools/list\n      },\n      \"serverInfo\": {\n        \"name\": \"...\", // \u8bbe\u5907\u540d\u79f0 (BOARD_NAME)\n        \"version\": \"...\" // \u8bbe\u5907\u56fa\u4ef6\u7248\u672c\n      }\n    }\n  }\n  ```"
+          },
+          {
+            "language": "text",
+            "code": "- **\u65f6\u673a\uff1a** \u540e\u53f0 API \u9700\u8981\u83b7\u53d6\u8bbe\u5907\u5f53\u524d\u652f\u6301\u7684\u5177\u4f53\u529f\u80fd\uff08\u5de5\u5177\uff09\u5217\u8868\u53ca\u5176\u8c03\u7528\u65b9\u5f0f\u65f6\u3002\n- **\u53d1\u9001\u65b9\uff1a** \u540e\u53f0 API (\u5ba2\u6237\u7aef)\u3002\n- **\u65b9\u6cd5\uff1a** `tools/list`\n- **\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"tools/list\",\n    \"params\": {\n      \"cursor\": \"\" // \u7528\u4e8e\u5206\u9875\uff0c\u9996\u6b21\u8bf7\u6c42\u4e3a\u7a7a\u5b57\u7b26\u4e32\n    },\n    \"id\": 2 // \u8bf7\u6c42 ID\n  }\n  ```\n- **\u8bbe\u5907\u54cd\u5e94\u65f6\u673a\uff1a** \u8bbe\u5907\u6536\u5230 `tools/list` \u8bf7\u6c42\u5e76\u751f\u6210\u5de5\u5177\u5217\u8868\u540e\u3002\n- **\u8bbe\u5907\u54cd\u5e94\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"id\": 2, // \u5339\u914d\u8bf7\u6c42 ID\n    \"result\": {\n      \"tools\": [ // \u5de5\u5177\u5bf9\u8c61\u5217\u8868\n        {\n          \"name\": \"self.get_device_status\",\n          \"description\": \"...\",\n          \"inputSchema\": { ... } // \u53c2\u6570 schema\n        },\n        {\n          \"name\": \"self.audio_speaker.set_volume\",\n          \"description\": \"...\",\n          \"inputSchema\": { ... } // \u53c2\u6570 schema\n        }\n        // ... \u66f4\u591a\u5de5\u5177\n      ],\n      \"nextCursor\": \"...\" // \u5982\u679c\u5217\u8868\u5f88\u5927\u9700\u8981\u5206\u9875\uff0c\u8fd9\u91cc\u4f1a\u5305\u542b\u4e0b\u4e00\u4e2a\u8bf7\u6c42\u7684 cursor \u503c\n    }\n  }\n  ```\n- **\u5206\u9875\u5904\u7406\uff1a** \u5982\u679c `nextCursor` \u5b57\u6bb5\u975e\u7a7a\uff0c\u5ba2\u6237\u7aef\u9700\u8981\u518d\u6b21\u53d1\u9001 `tools/list` \u8bf7\u6c42\uff0c\u5e76\u5728 `params` \u4e2d\u5e26\u4e0a\u8fd9\u4e2a `cursor` \u503c\u4ee5\u83b7\u53d6\u4e0b\u4e00\u9875\u5de5\u5177\u3002"
+          },
+          {
+            "language": "text",
+            "code": "- **\u65f6\u673a\uff1a** \u540e\u53f0 API \u9700\u8981\u6267\u884c\u8bbe\u5907\u4e0a\u7684\u67d0\u4e2a\u5177\u4f53\u529f\u80fd\u65f6\u3002\n- **\u53d1\u9001\u65b9\uff1a** \u540e\u53f0 API (\u5ba2\u6237\u7aef)\u3002\n- **\u65b9\u6cd5\uff1a** `tools/call`\n- **\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"tools/call\",\n    \"params\": {\n      \"name\": \"self.audio_speaker.set_volume\", // \u8981\u8c03\u7528\u7684\u5de5\u5177\u540d\u79f0\n      \"arguments\": {\n        // \u5de5\u5177\u53c2\u6570\uff0c\u5bf9\u8c61\u683c\u5f0f\n        \"volume\": 50 // \u53c2\u6570\u540d\u53ca\u5176\u503c\n      }\n    },\n    \"id\": 3 // \u8bf7\u6c42 ID\n  }\n  ```\n- **\u8bbe\u5907\u54cd\u5e94\u65f6\u673a\uff1a** \u8bbe\u5907\u6536\u5230 `tools/call` \u8bf7\u6c42\uff0c\u6267\u884c\u76f8\u5e94\u7684\u5de5\u5177\u51fd\u6570\u540e\u3002\n- **\u8bbe\u5907\u6210\u529f\u54cd\u5e94\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"id\": 3, // \u5339\u914d\u8bf7\u6c42 ID\n    \"result\": {\n      \"content\": [\n        // \u5de5\u5177\u6267\u884c\u7ed3\u679c\u5185\u5bb9\n        { \"type\": \"text\", \"text\": \"true\" } // \u793a\u4f8b\uff1aset_volume \u8fd4\u56de bool\n      ],\n      \"isError\": false // \u8868\u793a\u6210\u529f\n    }\n  }\n  ```\n- **\u8bbe\u5907\u5931\u8d25\u54cd\u5e94\u6d88\u606f (MCP payload):**\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"id\": 3, // \u5339\u914d\u8bf7\u6c42 ID\n    \"error\": {\n      \"code\": -32601, // JSON-RPC \u9519\u8bef\u7801\uff0c\u4f8b\u5982 Method not found (-32601)\n      \"message\": \"Unknown tool: self.non_existent_tool\" // \u9519\u8bef\u63cf\u8ff0\n    }\n  }\n  ```"
+          },
+          {
+            "language": "text",
+            "code": "- **\u65f6\u673a\uff1a** \u8bbe\u5907\u5185\u90e8\u53d1\u751f\u9700\u8981\u901a\u77e5\u540e\u53f0 API \u7684\u4e8b\u4ef6\u65f6\uff08\u4f8b\u5982\uff0c\u72b6\u6001\u53d8\u5316\uff0c\u867d\u7136\u4ee3\u7801\u793a\u4f8b\u4e2d\u6ca1\u6709\u660e\u786e\u7684\u5de5\u5177\u53d1\u9001\u6b64\u7c7b\u6d88\u606f\uff0c\u4f46 `Application::SendMcpMessage` \u7684\u5b58\u5728\u6697\u793a\u4e86\u8bbe\u5907\u53ef\u80fd\u4e3b\u52a8\u53d1\u9001 MCP \u6d88\u606f\uff09\u3002\n- **\u53d1\u9001\u65b9\uff1a** \u8bbe\u5907 (\u670d\u52a1\u5668)\u3002\n- **\u65b9\u6cd5\uff1a** \u53ef\u80fd\u662f\u4ee5 `notifications/` \u5f00\u5934\u7684\u65b9\u6cd5\u540d\uff0c\u6216\u8005\u5176\u4ed6\u81ea\u5b9a\u4e49\u65b9\u6cd5\u3002\n- **\u6d88\u606f (MCP payload):** \u9075\u5faa JSON-RPC Notification \u683c\u5f0f\uff0c\u6ca1\u6709 `id` \u5b57\u6bb5\u3002\n  ```json\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"notifications/state_changed\", // \u793a\u4f8b\u65b9\u6cd5\u540d\n    \"params\": {\n      \"newState\": \"idle\",\n      \"oldState\": \"connecting\"\n    }\n    // \u6ca1\u6709 id \u5b57\u6bb5\n  }\n  ```\n- **\u540e\u53f0 API \u5904\u7406\uff1a** \u63a5\u6536\u5230 Notification \u540e\uff0c\u540e\u53f0 API \u8fdb\u884c\u76f8\u5e94\u7684\u5904\u7406\uff0c\u4f46\u4e0d\u56de\u590d\u3002"
+          },
+          {
+            "language": "mermaid",
+            "code": "sequenceDiagram\n    participant Device as ESP32 Device\n    participant BackendAPI as \u540e\u53f0 API (Client)\n\n    Note over Device, BackendAPI: \u5efa\u7acb WebSocket / MQTT \u8fde\u63a5\n\n    Device->>BackendAPI: Hello Message (\u5305\u542b \"mcp\": true)\n\n    BackendAPI->>Device: MCP Initialize Request\n    Note over BackendAPI: method: initialize\n    Note over BackendAPI: params: { capabilities: ... }\n\n    Device->>BackendAPI: MCP Initialize Response\n    Note over Device: result: { protocolVersion: ..., serverInfo: ... }\n\n    BackendAPI->>Device: MCP Get Tools List Request\n    Note over BackendAPI: method: tools/list\n    Note over BackendAPI: params: { cursor: \"\" }\n\n    Device->>BackendAPI: MCP Get Tools List Response\n    Note over Device: result: { tools: [...], nextCursor: ... }\n\n    loop Optional Pagination\n        BackendAPI->>Device: MCP Get Tools List Request\n        Note over BackendAPI: method: tools/list\n        Note over BackendAPI: params: { cursor: \"...\" }\n        Device->>BackendAPI: MCP Get Tools List Response\n        Note over Device: result: { tools: [...], nextCursor: \"\" }\n    end\n\n    BackendAPI->>Device: MCP Call Tool Request\n    Note over BackendAPI: method: tools/call\n    Note over BackendAPI: params: { name: \"...\", arguments: { ... } }\n\n    alt Tool Call Successful\n        Device->>BackendAPI: MCP Tool Call Success Response\n        Note over Device: result: { content: [...], isError: false }\n    else Tool Call Failed\n        Device->>BackendAPI: MCP Tool Call Error Response\n        Note over Device: error: { code: ..., message: ... }\n    end\n\n    opt Device Notification\n        Device->>BackendAPI: MCP Notification\n        Note over Device: method: notifications/...\n        Note over Device: params: { ... }\n    end"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 1,
+        "word_count": 25,
+        "line_count": 270
+      },
+      "summary": "**MCP (Model Context Protocol) \u4ea4\u4e92\u6d41\u7a0b**\nSections: \u534f\u8bae\u683c\u5f0f, \u4ea4\u4e92\u6d41\u7a0b\u53ca\u53d1\u9001\u65f6\u673a, \u4ea4\u4e92\u56fe\nNOTICE: AI \u8f85\u52a9\u751f\u6210, \u5728\u5b9e\u73b0\u540e\u53f0\u670d\u52a1\u65f6, \u8bf7\u53c2\u7167\u4ee3\u7801\u786e\u8ba4\u7ec6\u8282!!\n(25 words, 7 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 0,
+        "code_blocks": 7,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 8.1
+        }
+      }
+    },
+    {
+      "path": "mcp-usage.md",
+      "filename": "mcp-usage.md",
+      "category": "overview",
+      "size_bytes": 3699,
+      "title": "MCP \u534f\u8bae\u7269\u8054\u7f51\u63a7\u5236\u7528\u6cd5\u8bf4\u660e",
+      "structure": {
+        "title": "MCP \u534f\u8bae\u7269\u8054\u7f51\u63a7\u5236\u7528\u6cd5\u8bf4\u660e",
+        "headers": [
+          {
+            "level": 1,
+            "text": "MCP \u534f\u8bae\u7269\u8054\u7f51\u63a7\u5236\u7528\u6cd5\u8bf4\u660e",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "\u7b80\u4ecb",
+            "line": 5
+          },
+          {
+            "level": 2,
+            "text": "\u5178\u578b\u4f7f\u7528\u6d41\u7a0b",
+            "line": 9
+          },
+          {
+            "level": 2,
+            "text": "\u8bbe\u5907\u7aef\u5de5\u5177\u6ce8\u518c\u65b9\u6cd5\u8bf4\u660e",
+            "line": 18
+          },
+          {
+            "level": 2,
+            "text": "\u5178\u578b\u6ce8\u518c\u793a\u4f8b\uff08\u4ee5 ESP-Hi \u4e3a\u4f8b\uff09",
+            "line": 35
+          },
+          {
+            "level": 2,
+            "text": "\u5e38\u89c1\u5de5\u5177\u8c03\u7528 JSON-RPC \u793a\u4f8b",
+            "line": 61
+          },
+          {
+            "level": 3,
+            "text": "1. \u83b7\u53d6\u5de5\u5177\u5217\u8868",
+            "line": 63
+          },
+          {
+            "level": 3,
+            "text": "2. \u63a7\u5236\u5e95\u76d8\u524d\u8fdb",
+            "line": 73
+          },
+          {
+            "level": 3,
+            "text": "3. \u5207\u6362\u706f\u5149\u6a21\u5f0f",
+            "line": 86
+          },
+          {
+            "level": 3,
+            "text": "4. \u6444\u50cf\u5934\u7ffb\u8f6c",
+            "line": 99
+          },
+          {
+            "level": 2,
+            "text": "\u5907\u6ce8",
+            "line": 112
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "cpp",
+            "code": "void AddTool(\n    const std::string& name,           // \u5de5\u5177\u540d\u79f0\uff0c\u5efa\u8bae\u552f\u4e00\u4e14\u6709\u5c42\u6b21\u611f\uff0c\u5982 self.dog.forward\n    const std::string& description,    // \u5de5\u5177\u63cf\u8ff0\uff0c\u7b80\u660e\u8bf4\u660e\u529f\u80fd\uff0c\u4fbf\u4e8e\u5927\u6a21\u578b\u7406\u89e3\n    const PropertyList& properties,    // \u8f93\u5165\u53c2\u6570\u5217\u8868\uff08\u53ef\u4e3a\u7a7a\uff09\uff0c\u652f\u6301\u7c7b\u578b\uff1a\u5e03\u5c14\u3001\u6574\u6570\u3001\u5b57\u7b26\u4e32\n    std::function<ReturnValue(const PropertyList&)> callback // \u5de5\u5177\u88ab\u8c03\u7528\u65f6\u7684\u56de\u8c03\u5b9e\u73b0\n);"
+          },
+          {
+            "language": "cpp",
+            "code": "void InitializeTools() {\n    auto& mcp_server = McpServer::GetInstance();\n    // \u4f8b1\uff1a\u65e0\u53c2\u6570\uff0c\u63a7\u5236\u673a\u5668\u4eba\u524d\u8fdb\n    mcp_server.AddTool(\"self.dog.forward\", \"\u673a\u5668\u4eba\u5411\u524d\u79fb\u52a8\", PropertyList(), [this](const PropertyList&) -> ReturnValue {\n        servo_dog_ctrl_send(DOG_STATE_FORWARD, NULL);\n        return true;\n    });\n    // \u4f8b2\uff1a\u5e26\u53c2\u6570\uff0c\u8bbe\u7f6e\u706f\u5149 RGB \u989c\u8272\n    mcp_server.AddTool(\"self.light.set_rgb\", \"\u8bbe\u7f6eRGB\u989c\u8272\", PropertyList({\n        Property(\"r\", kPropertyTypeInteger, 0, 255),\n        Property(\"g\", kPropertyTypeInteger, 0, 255),\n        Property(\"b\", kPropertyTypeInteger, 0, 255)\n    }), [this](const PropertyList& properties) -> ReturnValue {\n        int r = properties[\"r\"].value<int>();\n        int g = properties[\"g\"].value<int>();\n        int b = properties[\"b\"].value<int>();\n        led_on_ = true;\n        SetLedColor(r, g, b);\n        return true;\n    });\n}"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/list\",\n  \"params\": { \"cursor\": \"\" },\n  \"id\": 1\n}"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"self.chassis.go_forward\",\n    \"arguments\": {}\n  },\n  \"id\": 2\n}"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"self.chassis.switch_light_mode\",\n    \"arguments\": { \"light_mode\": 3 }\n  },\n  \"id\": 3\n}"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"self.camera.set_camera_flipped\",\n    \"arguments\": {}\n  },\n  \"id\": 4\n}"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 0,
+        "word_count": 24,
+        "line_count": 115
+      },
+      "summary": "**MCP \u534f\u8bae\u7269\u8054\u7f51\u63a7\u5236\u7528\u6cd5\u8bf4\u660e**\nSections: \u7b80\u4ecb, \u5178\u578b\u4f7f\u7528\u6d41\u7a0b, \u8bbe\u5907\u7aef\u5de5\u5177\u6ce8\u518c\u65b9\u6cd5\u8bf4\u660e, \u5178\u578b\u6ce8\u518c\u793a\u4f8b\uff08\u4ee5 ESP-Hi \u4e3a\u4f8b\uff09, \u5e38\u89c1\u5de5\u5177\u8c03\u7528 JSON-RPC \u793a\u4f8b\n> \u672c\u6587\u6863\u4ecb\u7ecd\u5982\u4f55\u57fa\u4e8e MCP \u534f\u8bae\u5b9e\u73b0 ESP32 \u8bbe\u5907\u7684\u7269\u8054\u7f51\u63a7\u5236\u3002\u8be6\u7ec6\u534f\u8bae\u6d41\u7a0b\u8bf7\u53c2\u8003 [`mcp-protocol.md`](./mcp-protocol.md)\u3002\n(24 words, 6 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 1,
+        "code_blocks": 6,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 9.416666666666666
+        }
+      }
+    },
+    {
+      "path": "mqtt-udp.md",
+      "filename": "mqtt-udp.md",
+      "category": "overview",
+      "size_bytes": 9021,
+      "title": "MQTT + UDP \u6df7\u5408\u901a\u4fe1\u534f\u8bae\u6587\u6863",
+      "structure": {
+        "title": "MQTT + UDP \u6df7\u5408\u901a\u4fe1\u534f\u8bae\u6587\u6863",
+        "headers": [
+          {
+            "level": 1,
+            "text": "MQTT + UDP \u6df7\u5408\u901a\u4fe1\u534f\u8bae\u6587\u6863",
+            "line": 1
+          },
+          {
+            "level": 2,
+            "text": "1. \u534f\u8bae\u6982\u89c8",
+            "line": 7
+          },
+          {
+            "level": 3,
+            "text": "1.1 \u534f\u8bae\u7279\u70b9",
+            "line": 13
+          },
+          {
+            "level": 2,
+            "text": "2. \u603b\u4f53\u6d41\u7a0b\u6982\u89c8",
+            "line": 22
+          },
+          {
+            "level": 2,
+            "text": "3. MQTT \u63a7\u5236\u901a\u9053",
+            "line": 61
+          },
+          {
+            "level": 3,
+            "text": "3.1 \u8fde\u63a5\u5efa\u7acb",
+            "line": 63
+          },
+          {
+            "level": 3,
+            "text": "3.2 Hello \u6d88\u606f\u4ea4\u6362",
+            "line": 71
+          },
+          {
+            "level": 4,
+            "text": "3.2.1 \u8bbe\u5907\u7aef\u53d1\u9001 Hello",
+            "line": 73
+          },
+          {
+            "level": 4,
+            "text": "3.2.2 \u670d\u52a1\u5668\u54cd\u5e94 Hello",
+            "line": 92
+          },
+          {
+            "level": 3,
+            "text": "3.3 JSON \u6d88\u606f\u7c7b\u578b",
+            "line": 120
+          },
+          {
+            "level": 4,
+            "text": "3.3.1 \u8bbe\u5907\u7aef\u2192\u670d\u52a1\u5668",
+            "line": 122
+          },
+          {
+            "level": 4,
+            "text": "3.3.2 \u670d\u52a1\u5668\u2192\u8bbe\u5907\u7aef",
+            "line": 164
+          },
+          {
+            "level": 2,
+            "text": "4. UDP \u97f3\u9891\u901a\u9053",
+            "line": 176
+          },
+          {
+            "level": 3,
+            "text": "4.1 \u8fde\u63a5\u5efa\u7acb",
+            "line": 178
+          },
+          {
+            "level": 3,
+            "text": "4.2 \u97f3\u9891\u6570\u636e\u683c\u5f0f",
+            "line": 186
+          },
+          {
+            "level": 4,
+            "text": "4.2.1 \u52a0\u5bc6\u97f3\u9891\u5305\u7ed3\u6784",
+            "line": 188
+          },
+          {
+            "level": 4,
+            "text": "4.2.2 \u52a0\u5bc6\u7b97\u6cd5",
+            "line": 204
+          },
+          {
+            "level": 3,
+            "text": "4.3 \u5e8f\u5217\u53f7\u7ba1\u7406",
+            "line": 211
+          },
+          {
+            "level": 3,
+            "text": "4.4 \u9519\u8bef\u5904\u7406",
+            "line": 218
+          },
+          {
+            "level": 2,
+            "text": "5. \u72b6\u6001\u7ba1\u7406",
+            "line": 226
+          },
+          {
+            "level": 3,
+            "text": "5.1 \u8fde\u63a5\u72b6\u6001",
+            "line": 228
+          },
+          {
+            "level": 3,
+            "text": "5.2 \u72b6\u6001\u68c0\u67e5",
+            "line": 248
+          },
+          {
+            "level": 2,
+            "text": "6. \u914d\u7f6e\u53c2\u6570",
+            "line": 259
+          },
+          {
+            "level": 3,
+            "text": "6.1 MQTT \u914d\u7f6e",
+            "line": 261
+          },
+          {
+            "level": 3,
+            "text": "6.2 \u97f3\u9891\u53c2\u6570",
+            "line": 271
+          },
+          {
+            "level": 2,
+            "text": "7. \u9519\u8bef\u5904\u7406\u4e0e\u91cd\u8fde",
+            "line": 280
+          },
+          {
+            "level": 3,
+            "text": "7.1 MQTT \u91cd\u8fde\u673a\u5236",
+            "line": 282
+          },
+          {
+            "level": 3,
+            "text": "7.2 UDP \u8fde\u63a5\u7ba1\u7406",
+            "line": 288
+          },
+          {
+            "level": 3,
+            "text": "7.3 \u8d85\u65f6\u5904\u7406",
+            "line": 294
+          },
+          {
+            "level": 2,
+            "text": "8. \u5b89\u5168\u8003\u8651",
+            "line": 303
+          },
+          {
+            "level": 3,
+            "text": "8.1 \u4f20\u8f93\u52a0\u5bc6",
+            "line": 305
+          },
+          {
+            "level": 3,
+            "text": "8.2 \u8ba4\u8bc1\u673a\u5236",
+            "line": 310
+          },
+          {
+            "level": 3,
+            "text": "8.3 \u9632\u91cd\u653e\u653b\u51fb",
+            "line": 315
+          },
+          {
+            "level": 2,
+            "text": "9. \u6027\u80fd\u4f18\u5316",
+            "line": 323
+          },
+          {
+            "level": 3,
+            "text": "9.1 \u5e76\u53d1\u63a7\u5236",
+            "line": 325
+          },
+          {
+            "level": 3,
+            "text": "9.2 \u5185\u5b58\u7ba1\u7406",
+            "line": 332
+          },
+          {
+            "level": 3,
+            "text": "9.3 \u7f51\u7edc\u4f18\u5316",
+            "line": 338
+          },
+          {
+            "level": 2,
+            "text": "10. \u4e0e WebSocket \u534f\u8bae\u7684\u6bd4\u8f83",
+            "line": 346
+          },
+          {
+            "level": 2,
+            "text": "11. \u90e8\u7f72\u5efa\u8bae",
+            "line": 360
+          },
+          {
+            "level": 3,
+            "text": "11.1 \u7f51\u7edc\u73af\u5883",
+            "line": 362
+          },
+          {
+            "level": 3,
+            "text": "11.2 \u670d\u52a1\u5668\u914d\u7f6e",
+            "line": 368
+          },
+          {
+            "level": 3,
+            "text": "11.3 \u76d1\u63a7\u6307\u6807",
+            "line": 374
+          },
+          {
+            "level": 2,
+            "text": "12. \u603b\u7ed3",
+            "line": 383
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "mermaid",
+            "code": "sequenceDiagram\n    participant Device as ESP32 \u8bbe\u5907\n    participant MQTT as MQTT \u670d\u52a1\u5668\n    participant UDP as UDP \u670d\u52a1\u5668\n\n    Note over Device, UDP: 1. \u5efa\u7acb MQTT \u8fde\u63a5\n    Device->>MQTT: MQTT Connect\n    MQTT->>Device: Connected\n\n    Note over Device, UDP: 2. \u8bf7\u6c42\u97f3\u9891\u901a\u9053\n    Device->>MQTT: Hello Message (type: \"hello\", transport: \"udp\")\n    MQTT->>Device: Hello Response (UDP \u8fde\u63a5\u4fe1\u606f + \u52a0\u5bc6\u5bc6\u94a5)\n\n    Note over Device, UDP: 3. \u5efa\u7acb UDP \u8fde\u63a5\n    Device->>UDP: UDP Connect\n    UDP->>Device: Connected\n\n    Note over Device, UDP: 4. \u97f3\u9891\u6570\u636e\u4f20\u8f93\n    loop \u97f3\u9891\u6d41\u4f20\u8f93\n        Device->>UDP: \u52a0\u5bc6\u97f3\u9891\u6570\u636e (Opus)\n        UDP->>Device: \u52a0\u5bc6\u97f3\u9891\u6570\u636e (Opus)\n    end\n\n    Note over Device, UDP: 5. \u63a7\u5236\u6d88\u606f\u4ea4\u6362\n    par \u63a7\u5236\u6d88\u606f\n        Device->>MQTT: Listen/TTS/MCP \u6d88\u606f\n        MQTT->>Device: STT/TTS/MCP \u54cd\u5e94\n    end\n\n    Note over Device, UDP: 6. \u5173\u95ed\u8fde\u63a5\n    Device->>MQTT: Goodbye Message\n    Device->>UDP: Disconnect"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"type\": \"hello\",\n  \"version\": 3,\n  \"transport\": \"udp\",\n  \"features\": {\n    \"mcp\": true\n  },\n  \"audio_params\": {\n    \"format\": \"opus\",\n    \"sample_rate\": 16000,\n    \"channels\": 1,\n    \"frame_duration\": 60\n  }\n}"
+          },
+          {
+            "language": "json",
+            "code": "{\n  \"type\": \"hello\",\n  \"transport\": \"udp\",\n  \"session_id\": \"xxx\",\n  \"audio_params\": {\n    \"format\": \"opus\",\n    \"sample_rate\": 24000,\n    \"channels\": 1,\n    \"frame_duration\": 60\n  },\n  \"udp\": {\n    \"server\": \"192.168.1.100\",\n    \"port\": 8888,\n    \"key\": \"0123456789ABCDEF0123456789ABCDEF\",\n    \"nonce\": \"0123456789ABCDEF0123456789ABCDEF\"\n  }\n}"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"listen\",\n     \"state\": \"start\",\n     \"mode\": \"manual\"\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"abort\",\n     \"reason\": \"wake_word_detected\"\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"mcp\",\n     \"payload\": {\n       \"jsonrpc\": \"2.0\",\n       \"id\": 1,\n       \"result\": {...}\n     }\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"goodbye\"\n   }"
+          },
+          {
+            "language": "text",
+            "code": "|type 1byte|flags 1byte|payload_len 2bytes|ssrc 4bytes|timestamp 4bytes|sequence 4bytes|\n|payload payload_len bytes|"
+          },
+          {
+            "language": "mermaid",
+            "code": "stateDiagram\n    direction TB\n    [*] --> Disconnected\n    Disconnected --> MqttConnecting: StartMqttClient()\n    MqttConnecting --> MqttConnected: MQTT Connected\n    MqttConnecting --> Disconnected: Connect Failed\n    MqttConnected --> RequestingChannel: OpenAudioChannel()\n    RequestingChannel --> ChannelOpened: Hello Exchange Success\n    RequestingChannel --> MqttConnected: Hello Timeout/Failed\n    ChannelOpened --> UdpConnected: UDP Connect Success\n    UdpConnected --> AudioStreaming: Start Audio Transfer\n    AudioStreaming --> UdpConnected: Stop Audio Transfer\n    UdpConnected --> ChannelOpened: UDP Disconnect\n    ChannelOpened --> MqttConnected: CloseAudioChannel()\n    MqttConnected --> Disconnected: MQTT Disconnect"
+          }
+        ],
+        "tables": 1,
+        "images": 0,
+        "links": 0,
+        "word_count": 109,
+        "line_count": 393
+      },
+      "summary": "**MQTT + UDP \u6df7\u5408\u901a\u4fe1\u534f\u8bae\u6587\u6863**\nSections: 1. \u534f\u8bae\u6982\u89c8, 1.1 \u534f\u8bae\u7279\u70b9, 2. \u603b\u4f53\u6d41\u7a0b\u6982\u89c8, 3. MQTT \u63a7\u5236\u901a\u9053, 3.1 \u8fde\u63a5\u5efa\u7acb\n\u57fa\u4e8e\u4ee3\u7801\u5b9e\u73b0\u6574\u7406\u7684 MQTT + UDP \u6df7\u5408\u901a\u4fe1\u534f\u8bae\u6587\u6863\uff0c\u6982\u8ff0\u8bbe\u5907\u7aef\u4e0e\u670d\u52a1\u5668\u4e4b\u95f4\u5982\u4f55\u901a\u8fc7 MQTT \u8fdb\u884c\u63a7\u5236\u6d88\u606f\u4f20\u8f93\uff0c\u901a\u8fc7 UDP \u8fdb\u884c\u97f3\u9891\u6570\u636e\u4f20\u8f93\u7684\u4ea4\u4e92\u65b9\u5f0f\u3002\n(109 words, 9 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 1,
+        "cross_references": 0,
+        "code_blocks": 9,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 8.911111111111111
+        }
+      }
+    },
+    {
+      "path": "websocket.md",
+      "filename": "websocket.md",
+      "category": "overview",
+      "size_bytes": 17721,
+      "title": "websocket",
+      "structure": {
+        "title": "",
+        "headers": [
+          {
+            "level": 2,
+            "text": "1. \u603b\u4f53\u6d41\u7a0b\u6982\u89c8",
+            "line": 7
+          },
+          {
+            "level": 2,
+            "text": "2. \u901a\u7528\u8bf7\u6c42\u5934",
+            "line": 82
+          },
+          {
+            "level": 2,
+            "text": "3. \u4e8c\u8fdb\u5236\u534f\u8bae\u7248\u672c",
+            "line": 95
+          },
+          {
+            "level": 3,
+            "text": "3.1 \u7248\u672c1\uff08\u9ed8\u8ba4\uff09",
+            "line": 99
+          },
+          {
+            "level": 3,
+            "text": "3.2 \u7248\u672c2",
+            "line": 102
+          },
+          {
+            "level": 3,
+            "text": "3.3 \u7248\u672c3",
+            "line": 115
+          },
+          {
+            "level": 2,
+            "text": "4. JSON \u6d88\u606f\u7ed3\u6784",
+            "line": 128
+          },
+          {
+            "level": 3,
+            "text": "4.1 \u8bbe\u5907\u7aef\u2192\u670d\u52a1\u5668",
+            "line": 132
+          },
+          {
+            "level": 3,
+            "text": "4.2 \u670d\u52a1\u5668\u2192\u8bbe\u5907\u7aef",
+            "line": 219
+          },
+          {
+            "level": 2,
+            "text": "5. \u97f3\u9891\u7f16\u89e3\u7801",
+            "line": 295
+          },
+          {
+            "level": 2,
+            "text": "6. \u5e38\u89c1\u72b6\u6001\u6d41\u8f6c",
+            "line": 308
+          },
+          {
+            "level": 3,
+            "text": "\u81ea\u52a8\u6a21\u5f0f\u72b6\u6001\u6d41\u8f6c\u56fe",
+            "line": 327
+          },
+          {
+            "level": 3,
+            "text": "\u624b\u52a8\u6a21\u5f0f\u72b6\u6001\u6d41\u8f6c\u56fe",
+            "line": 347
+          },
+          {
+            "level": 2,
+            "text": "7. \u9519\u8bef\u5904\u7406",
+            "line": 369
+          },
+          {
+            "level": 2,
+            "text": "8. \u5176\u5b83\u6ce8\u610f\u4e8b\u9879",
+            "line": 381
+          },
+          {
+            "level": 2,
+            "text": "9. \u6d88\u606f\u793a\u4f8b",
+            "line": 409
+          },
+          {
+            "level": 2,
+            "text": "10. \u603b\u7ed3",
+            "line": 486
+          }
+        ],
+        "code_blocks": [
+          {
+            "language": "json",
+            "code": "   {\n     \"type\": \"hello\",\n     \"version\": 1,\n     \"features\": {\n       \"mcp\": true\n     },\n     \"transport\": \"websocket\",\n     \"audio_params\": {\n       \"format\": \"opus\",\n       \"sample_rate\": 16000,\n       \"channels\": 1,\n       \"frame_duration\": 60\n     }\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"type\": \"hello\",\n     \"transport\": \"websocket\",\n     \"session_id\": \"xxx\",\n     \"audio_params\": {\n       \"format\": \"opus\",\n       \"sample_rate\": 24000,\n       \"channels\": 1,\n       \"frame_duration\": 60\n     }\n   }"
+          },
+          {
+            "language": "text",
+            "code": " 1. **\u4e8c\u8fdb\u5236\u97f3\u9891\u6570\u636e**\uff08Opus \u7f16\u7801\uff09  \n 2. **\u6587\u672c JSON \u6d88\u606f**\uff08\u7528\u4e8e\u4f20\u8f93\u804a\u5929\u72b6\u6001\u3001TTS/STT \u4e8b\u4ef6\u3001MCP \u534f\u8bae\u6d88\u606f\u7b49\uff09"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"type\": \"hello\",\n       \"version\": 1,\n       \"features\": {\n         \"mcp\": true\n       },\n       \"transport\": \"websocket\",\n       \"audio_params\": {\n         \"format\": \"opus\",\n         \"sample_rate\": 16000,\n         \"channels\": 1,\n         \"frame_duration\": 60\n       }\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"listen\",\n       \"state\": \"start\",\n       \"mode\": \"manual\"\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"abort\",\n       \"reason\": \"wake_word_detected\"\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"listen\",\n       \"state\": \"detect\",\n       \"text\": \"\u4f60\u597d\u5c0f\u660e\"\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"mcp\",\n       \"payload\": {\n         \"jsonrpc\": \"2.0\",\n         \"id\": 1,\n         \"result\": {\n           \"content\": [\n             { \"type\": \"text\", \"text\": \"true\" }\n           ],\n           \"isError\": false\n         }\n       }\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"mcp\",\n       \"payload\": {\n         \"jsonrpc\": \"2.0\",\n         \"method\": \"tools/call\",\n         \"params\": {\n           \"name\": \"self.light.set_rgb\",\n           \"arguments\": { \"r\": 255, \"g\": 0, \"b\": 0 }\n         },\n         \"id\": 1\n       }\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"system\",\n       \"command\": \"reboot\"\n     }"
+          },
+          {
+            "language": "json",
+            "code": "     {\n       \"session_id\": \"xxx\",\n       \"type\": \"custom\",\n       \"payload\": {\n         \"message\": \"\u81ea\u5b9a\u4e49\u5185\u5bb9\"\n       }\n     }"
+          },
+          {
+            "language": "mermaid",
+            "code": "stateDiagram\n  direction TB\n  [*] --> kDeviceStateUnknown\n  kDeviceStateUnknown --> kDeviceStateStarting:\u521d\u59cb\u5316\n  kDeviceStateStarting --> kDeviceStateWifiConfiguring:\u914d\u7f6eWiFi\n  kDeviceStateStarting --> kDeviceStateActivating:\u6fc0\u6d3b\u8bbe\u5907\n  kDeviceStateActivating --> kDeviceStateUpgrading:\u68c0\u6d4b\u5230\u65b0\u7248\u672c\n  kDeviceStateActivating --> kDeviceStateIdle:\u6fc0\u6d3b\u5b8c\u6210\n  kDeviceStateIdle --> kDeviceStateConnecting:\u5f00\u59cb\u8fde\u63a5\n  kDeviceStateConnecting --> kDeviceStateIdle:\u8fde\u63a5\u5931\u8d25\n  kDeviceStateConnecting --> kDeviceStateListening:\u8fde\u63a5\u6210\u529f\n  kDeviceStateListening --> kDeviceStateSpeaking:\u5f00\u59cb\u8bf4\u8bdd\n  kDeviceStateSpeaking --> kDeviceStateListening:\u7ed3\u675f\u8bf4\u8bdd\n  kDeviceStateListening --> kDeviceStateIdle:\u624b\u52a8\u7ec8\u6b62\n  kDeviceStateSpeaking --> kDeviceStateIdle:\u81ea\u52a8\u7ec8\u6b62"
+          },
+          {
+            "language": "mermaid",
+            "code": "stateDiagram\n  direction TB\n  [*] --> kDeviceStateUnknown\n  kDeviceStateUnknown --> kDeviceStateStarting:\u521d\u59cb\u5316\n  kDeviceStateStarting --> kDeviceStateWifiConfiguring:\u914d\u7f6eWiFi\n  kDeviceStateStarting --> kDeviceStateActivating:\u6fc0\u6d3b\u8bbe\u5907\n  kDeviceStateActivating --> kDeviceStateUpgrading:\u68c0\u6d4b\u5230\u65b0\u7248\u672c\n  kDeviceStateActivating --> kDeviceStateIdle:\u6fc0\u6d3b\u5b8c\u6210\n  kDeviceStateIdle --> kDeviceStateConnecting:\u5f00\u59cb\u8fde\u63a5\n  kDeviceStateConnecting --> kDeviceStateIdle:\u8fde\u63a5\u5931\u8d25\n  kDeviceStateConnecting --> kDeviceStateListening:\u8fde\u63a5\u6210\u529f\n  kDeviceStateIdle --> kDeviceStateListening:\u5f00\u59cb\u76d1\u542c\n  kDeviceStateListening --> kDeviceStateIdle:\u505c\u6b62\u76d1\u542c\n  kDeviceStateIdle --> kDeviceStateSpeaking:\u5f00\u59cb\u8bf4\u8bdd\n  kDeviceStateSpeaking --> kDeviceStateIdle:\u7ed3\u675f\u8bf4\u8bdd"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"type\": \"hello\",\n     \"version\": 1,\n     \"features\": {\n       \"mcp\": true\n     },\n     \"transport\": \"websocket\",\n     \"audio_params\": {\n       \"format\": \"opus\",\n       \"sample_rate\": 16000,\n       \"channels\": 1,\n       \"frame_duration\": 60\n     }\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"type\": \"hello\",\n     \"transport\": \"websocket\",\n     \"session_id\": \"xxx\",\n     \"audio_params\": {\n       \"format\": \"opus\",\n       \"sample_rate\": 16000\n     }\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"listen\",\n     \"state\": \"start\",\n     \"mode\": \"auto\"\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"stt\",\n     \"text\": \"\u7528\u6237\u8bf4\u7684\u8bdd\"\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"tts\",\n     \"state\": \"start\"\n   }"
+          },
+          {
+            "language": "json",
+            "code": "   {\n     \"session_id\": \"xxx\",\n     \"type\": \"tts\",\n     \"state\": \"stop\"\n   }"
+          }
+        ],
+        "tables": 0,
+        "images": 0,
+        "links": 0,
+        "word_count": 146,
+        "line_count": 496
+      },
+      "summary": "Sections: 1. \u603b\u4f53\u6d41\u7a0b\u6982\u89c8, 2. \u901a\u7528\u8bf7\u6c42\u5934, 3. \u4e8c\u8fdb\u5236\u534f\u8bae\u7248\u672c, 3.1 \u7248\u672c1\uff08\u9ed8\u8ba4\uff09, 3.2 \u7248\u672c2\n\u4ee5\u4e0b\u662f\u4e00\u4efd\u57fa\u4e8e\u4ee3\u7801\u5b9e\u73b0\u6574\u7406\u7684 WebSocket \u901a\u4fe1\u534f\u8bae\u6587\u6863\uff0c\u6982\u8ff0\u8bbe\u5907\u7aef\u4e0e\u670d\u52a1\u5668\u4e4b\u95f4\u5982\u4f55\u901a\u8fc7 WebSocket \u8fdb\u884c\u4ea4\u4e92\u3002\n(146 words, 19 code blocks)",
+      "content": null,
+      "_enhanced": true,
+      "parsed_data": {
+        "tables": 0,
+        "cross_references": 0,
+        "code_blocks": 19,
+        "images": 0,
+        "quality_scores": {
+          "avg_code_quality": 9.263157894736842
+        }
+      }
+    }
+  ]
+}
