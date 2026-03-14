@@ -1,0 +1,5 @@
+## IDF Component Manager Manifest File
+## 使用国内镜像源
+registries:
+  - url: "https://components.hpmicro.com/api/v1/"
+  - url: "https://components.espressif.com/"

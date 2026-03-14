@@ -85,6 +85,12 @@ bool WebsocketProtocol::OpenAudioChannel() {
     std::string url = settings.GetString("url");
     std::string token = settings.GetString("token");
     int version = settings.GetInt("version");
+
+    // Use custom WebSocket server if URL is not configured
+    if (url.empty()) {
+        url = "ws://192.168.1.105:8100/xiaozhi/v1/";
+    }
+
     if (version != 0) {
         version_ = version;
     }
